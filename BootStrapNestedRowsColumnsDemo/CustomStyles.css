@@ -1,0 +1,90 @@
+﻿.sidebarContent
+{
+    margin-bottom:10px;
+    min-height:150px;
+    background-color:silver;
+    text-align:center;
+    font-size:large;
+}
+
+.mainContent
+{
+    margin-bottom:10px;
+    min-height:310px;
+    background-color:silver;
+    text-align:center;
+    font-size:large;
+}
+
+/*
+    Nested.
+    .customDiv
+{
+    margin:3px;
+    min-height:300px;
+    background-color:silver;
+    text-align:center;
+    font-size:large;
+}*/
+
+/*.customDiv
+{
+    margin:10px;
+    min-height:50px;
+    background-color:silver;
+    text-align:center;
+    font-size:large;
+    padding:10px;
+}*/
+
+.customDiv
+{
+    padding:10px;
+    width:100%;
+}
+
+/*hr
+{
+    border: 1px solid red;
+}*/
+/*Padding has to be in place for the navbar even if it is in a container*/
+body
+{
+    /*padding-top:50px;*/
+    padding-bottom:50px;
+}
+
+/*
+    <!--Bootstrap Breadcrumbs Demo-->
+    .breadcrumb > li + li:before 
+{
+  content: "|";
+}
+
+.breadcrumb 
+{
+  background-color: #ffd800;
+}
+
+.breadcrumb > .active 
+{
+  color: #ff0000;
+}*/
+
+thead
+{
+    font-weight:bold;
+}
+/*.btn
+{
+    margin-top:10px;
+}*/
+/*.well 
+{
+  background-color: #dddf7c;
+}*/
+
+.jumbotron 
+{
+  background-color: #e3e33d;
+}
