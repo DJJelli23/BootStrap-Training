@@ -1808,20 +1808,36 @@
             </div>
         </div>
     </div>-->
-
-    <!--Bootstrap Tooltip Tutorial-->
+    <!--Bootstrap Tooltip Tutorial
 
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
+                <br />
+                <br />
 
+                <button class="btn btn-primary" data-toggle="tooltip">Button</button>
             </div>
         </div>
-    </div>
+    </div>-->
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-
-    
+    <!--Bootstrap Tooltip Tutorial JavaScript
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            $('[data-toggle="tooltip"]').tooltip(
+            {
+                placement: 'right',
+                title: "<h3>Help</h3><p>Click to submit this page.</p>",
+                animation: true,
+                delay: { show: 300, hide: 500 },
+                html: true
+            });
+        });
+    </script>-->
     <!--Bootstrap Modal Methods & Events
     <script type="text/javascript">
         $(document).ready(function ()
