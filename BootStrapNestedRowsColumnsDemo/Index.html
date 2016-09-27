@@ -1754,7 +1754,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button class="btn btn-primary">Login</button>
-                                <button class="btn btn-primary">Close</button>
+                                <button class="btn btn-primary" id="btnHideModal">Close</button>
                             </div>
                         </div>
                     </div>
@@ -1766,12 +1766,30 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
     -->
+    <!--Bootstrap Modal Methods & Events-->
     <script type="text/javascript">
         $(document).ready(function ()
         {
             $('#btnShowModal').click(function ()
             {
                 $('#loginModal').modal('show');
+            });
+            $('#btnHideModal').click(function ()
+            {
+                $('#loginModal').modal('hide');
+            });
+            $('#loginModal').on('show.bs.modal', function ()
+            {
+                alert('Modal is about to be displayed');
+            });
+            $('#loginModal').on('shown.bs.modal', function () {
+                alert('Modal is Displayed');
+            });
+            $('#loginModal').on('hide.bs.modal', function () {
+                alert('Modal is about to be hidden');
+            });
+            $('#loginModal').on('hidden.bs.modal', function () {
+                alert('Modal is hidden');
             });
         });
     </script>
