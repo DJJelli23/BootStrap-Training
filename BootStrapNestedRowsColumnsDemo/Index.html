@@ -8,14 +8,21 @@
     <title>BootStrap Grid Demo</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="CustomStyles.css" rel="stylesheet" />
-    <style type="text/css">
+     
+        <style type="text/css">
         body{
             position:relative;
         }
-        #mainNavbar{
+        
+        /*.affix{
+            top:22px;
+            ------------------22 had to be set for the browser
+        }*/
+        /*<!-- Part 48-49
+            #mainNavbar{
             position:fixed;
             top:20px;
-        }
+        }*/
     </style>
 </head>
 <body>
@@ -2023,16 +2030,62 @@
     </div>
     
     -->
-
-    <!--Bootstrap Affix Plugin Tutorial Part 50-->
+    <!--Bootstrap Affix Plugin Tutorial Part 50--
 
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                
+                <div class="jumbotron">
+                    <h1>Bootstrap Affix Example</h1>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <nav id="mainNavbar">
+                    <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="200">
+                        <li class="active"><a href="#divDesert">Desert</a></li>
+                        <li><a href="#divLighthouse">Lighthouse</a></li>
+                        <li><a href="#divTulips">Tulips</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Animals
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#divJellyfish">Jellyfish</a></li>
+                                <li><a href="#divPenguins">Penguins</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xs-9">
+                <div id="divDesert">
+                    <h1>Desert</h1>
+                    <img src="Images/Desert.png" class="img-responsive" />
+                </div>
+                <div id="divLighthouse">
+                    <h1>Lighthouse</h1>
+                    <img src="Images/Lighthouse.png" class="img-responsive" />
+                </div>
+                <div id="divTulips">
+                    <h1>Tulips</h1>
+                    <img src="Images/Tulips.jpg" class="img-responsive" />
+                </div>
+                <div id="divJellyfish">
+                    <h1>Jellyfish</h1>
+                    <img src="Images/Jellyfish.png" class="img-responsive" />
+                </div>
+                <div id="divPenguins">
+                    <h1>Penguins</h1>
+                    <img src="Images/Penguins.png" class="img-responsive" />
+                </div>
             </div>
         </div>
     </div>
+
+    -->
+
+    <!--Bootstrap Image Carousel Tutorial Part 51-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!--Bootstrap Scrollspy Not Working Tutorial Part 49--
