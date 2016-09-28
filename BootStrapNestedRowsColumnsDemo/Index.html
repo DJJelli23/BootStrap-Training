@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -8,8 +8,18 @@
     <title>BootStrap Grid Demo</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="CustomStyles.css" rel="stylesheet" />
+    <style type="text/css">
+        body{
+            position:relative;
+        }
+        #mainNavbar{
+            position:fixed;
+            top:20px;
+        }
+    </style>
 </head>
 <body>
+    <!--Part 47 ____ <body data-spy="scroll" data-target="#mainNavbar" data-offset="100" >-->
     <!--
         BootStrap Nested Rows and Columns Demo.
 
@@ -1082,7 +1092,7 @@
             </div>
         </div>
     </div>-->
-    <!--Bootstrap Navbar Component Demo
+    <!--Bootstrap Navbar Component Demo Part 28
 
     <nav class="navbar navbar-default navbar-inverse navbar-fixed-bottom">
         <div class="container">
@@ -1808,7 +1818,7 @@
             </div>
         </div>
     </div>-->
-    <!--Bootstrap Tooltip Tutorial-->
+    <!--Bootstrap Tooltip Tutorial part 43
 
     <div class="container">
         <div class="row">
@@ -1819,11 +1829,271 @@
                 <button class="btn btn-primary" data-toggle="tooltip">Button</button>
             </div>
         </div>
+    </div>-->
+    <!--Bootstrap Tooltip Manual Trigger Tutorial Part 44 --
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <br /> <br />
+
+                Name : <input type="text" id="txtName" title="Bootstrap Tooltip" data-toggle="tooltip" />
+                <span class="glyphicon glyphicon-info-sign" id="infoIcon"></span>
+            </div>
+        </div>
+    </div>-->
+    <!--Bootstrap Popover Tutorial - Hover can be changed with: click, focus -- Part 45
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <br /><br />
+                <button class="btn btn-primary" id="btnPopover" title="Calendar" data-toggle="popover"
+                        data-trigger="hover"
+                        data-content="<img class='img-responsive' src='Images/Calendar.png'/>"
+                        data-html="true"
+                        data-placement="bottom">
+                    Calendar
+                </button>
+            </div>
+        </div>
+    </div>-->
+    <!--Bootstrap Alert Plugin Tutorial Part 46--
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8">
+                <br /><br />
+                <button id="btnSubmit" class="btn btn-primary">Submit</button>
+                <br /><br />
+                <div class="alert alert-danger collapse" id="myAlert">
+                    <a id="linkClose" href="#" class="close">&times;</a>
+                    <strong>Error! </strong>There is a problem submitting your form.
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!--Bootstrap Scrollspy Tutorial Part 47--
+    <nav id="mainNavbar" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-target="#mainNavbar" data-toggle="collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="mainNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#divDesert">Desert</a></li>
+                    <li><a href="#divLighthouse">Lighthouse</a></li>
+                    <li><a href="#divTulips">Tulips</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Animals
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#divJellyfish">Jellyfish</a></li>
+                            <li><a href="#divPenguins">Penguins</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="divDesert" class="divStyle">
+            <h1>Desert</h1>
+            <img src="Images/Desert.png" class="img-responsive" />
+        </div>
+        <div id="divLighthouse" class="divStyle">
+            <h1>Lighthouse</h1>
+            <img src="Images/Lighthouse.png" class="img-responsive" />
+        </div>
+        <div id="divTulips" class="divStyle">
+            <h1>Tulips</h1>
+            <img src="Images/Tulips.jpg" class="img-responsive" />
+        </div>
+        <div id="divJellyfish" class="divStyle">
+            <h1>Jellyfish</h1>
+            <img src="Images/Jellyfish.png" class="img-responsive" />
+        </div>
+        <div id="divPenguins" class="divStyle">
+            <h1>Penguins</h1>
+            <img src="Images/Penguins.png" class="img-responsive" />
+        </div>
+    </div>-->
+    <!--Bootstrap Scrollspy Not Working Tutorial Part 48--
+    <nav id="mainNavbar" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-target="#mainNavbar" data-toggle="collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="mainNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#divDesert">Desert</a></li>
+                    <li><a href="#divLighthouse">Lighthouse</a></li>
+                    <li><a href="#divTulips">Tulips</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Animals
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#divJellyfish">Jellyfish</a></li>
+                            <li><a href="#divPenguins">Penguins</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="divDesert" class="divStyle">
+            <h1>Desert</h1>
+            <img src="Images/Desert.png" class="img-responsive" />
+        </div>
+        <div id="divLighthouse" class="divStyle">
+            <h1>Lighthouse</h1>
+            <img src="Images/Lighthouse.png" class="img-responsive" />
+        </div>
+        <div id="divTulips" class="divStyle">
+            <h1>Tulips</h1>
+            <img src="Images/Tulips.jpg" class="img-responsive" />
+        </div>
+        <div id="divJellyfish" class="divStyle">
+            <h1>Jellyfish</h1>
+            <img src="Images/Jellyfish.png" class="img-responsive" />
+        </div>
+        <div id="divPenguins" class="divStyle">
+            <h1>Penguins</h1>
+            <img src="Images/Penguins.png" class="img-responsive" />
+        </div>
+    </div>-->
+    <!--Bootstrap Scrollspy Vertical Menu Tutorial Part 49--
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <nav id="mainNavbar">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="#divDesert">Desert</a></li>
+                        <li><a href="#divLighthouse">Lighthouse</a></li>
+                        <li><a href="#divTulips">Tulips</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Animals
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#divJellyfish">Jellyfish</a></li>
+                                <li><a href="#divPenguins">Penguins</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xs-9">
+                <div id="divDesert">
+                    <h1>Desert</h1>
+                    <img src="Images/Desert.png" class="img-responsive" />
+                </div>
+                <div id="divLighthouse">
+                    <h1>Lighthouse</h1>
+                    <img src="Images/Lighthouse.png" class="img-responsive" />
+                </div>
+                <div id="divTulips">
+                    <h1>Tulips</h1>
+                    <img src="Images/Tulips.jpg" class="img-responsive" />
+                </div>
+                <div id="divJellyfish">
+                    <h1>Jellyfish</h1>
+                    <img src="Images/Jellyfish.png" class="img-responsive" />
+                </div>
+                <div id="divPenguins">
+                    <h1>Penguins</h1>
+                    <img src="Images/Penguins.png" class="img-responsive" />
+                </div>
+            </div>
+        </div>
     </div>
+    
+    -->
 
+    <!--Bootstrap Affix Plugin Tutorial Part 50-->
 
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class=""
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!--Bootstrap Scrollspy Not Working Tutorial Part 49--
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            $('body').scrollspy({
+                target: '#mainNavbar',
+                offset: 75
+            });
+        });
+    </script>-->
+    <!--Bootstrap Scrollspy Not Working Tutorial Part 48--
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            $('body').scrollspy({
+                target: '#mainNavbar',
+                offset: 75
+            });
+        });
+    </script>-->
+    <!--Bootstrap Alert Plugin Tutorial--
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            $('#btnSubmit').click(function ()
+            {
+                $('#myAlert').show('fade');
+
+                setTimeout(function () {
+                    $('#myAlert').hide('fade');
+                }, 2000);
+            });
+            $('#linkClose').click(function ()
+            {
+                $('#myAlert').hide('fade');
+            });
+        });
+    </script>-->
+    <!--Bootstrap Popover Tutorial - Hover can be changed with: click, focus JavaScript
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#btnPopover').popover();
+        });
+    </script>-->
+    <!--Bootstrap Tooltip Manual Trigger Tutorial JavaScript
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            $('#txtName').tooltip(
+            {
+                trigger : 'manual'
+            });
+
+            $('#infoIcon').hover(function ()
+            {
+                $('#txtName').tooltip('toggle');
+            });
+        });
+    </script>-->
     <!--Bootstrap Tooltip Tutorial JavaScript
     <script type="text/javascript">
         $(document).ready(function ()
