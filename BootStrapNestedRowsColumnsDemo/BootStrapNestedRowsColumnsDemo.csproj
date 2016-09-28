@@ -66,10 +66,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\Chrysanthemum.png" />
     <Content Include="Images\Desert.png" />
+    <Content Include="Images\Hydrangeas.png" />
     <Content Include="Images\Jellyfish.png" />
+    <Content Include="Images\Koala.png" />
     <Content Include="Images\Lighthouse.png" />
     <Content Include="Images\Penguins.png" />
+    <Content Include="Images\Stripes.png" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Web.Debug.config">
