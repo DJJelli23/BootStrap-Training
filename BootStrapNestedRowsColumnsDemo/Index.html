@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -8,14 +8,21 @@
     <title>BootStrap Grid Demo</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="CustomStyles.css" rel="stylesheet" />
-    <style type="text/css">
+     
+        <style type="text/css">
         body{
             position:relative;
         }
-        #mainNavbar{
+        
+        /*.affix{
+            top:22px;
+            ------------------22 had to be set for the browser
+        }*/
+        /*<!-- Part 48-49
+            #mainNavbar{
             position:fixed;
             top:20px;
-        }
+        }*/
     </style>
 </head>
 <body>
@@ -2023,18 +2030,249 @@
     </div>
     
     -->
-
-    <!--Bootstrap Affix Plugin Tutorial Part 50-->
+    <!--Bootstrap Affix Plugin Tutorial Part 50--
 
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <div class=""
+                <div class="jumbotron">
+                    <h1>Bootstrap Affix Example</h1>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <nav id="mainNavbar">
+                    <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="200">
+                        <li class="active"><a href="#divDesert">Desert</a></li>
+                        <li><a href="#divLighthouse">Lighthouse</a></li>
+                        <li><a href="#divTulips">Tulips</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Animals
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#divJellyfish">Jellyfish</a></li>
+                                <li><a href="#divPenguins">Penguins</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xs-9">
+                <div id="divDesert">
+                    <h1>Desert</h1>
+                    <img src="Images/Desert.png" class="img-responsive" />
+                </div>
+                <div id="divLighthouse">
+                    <h1>Lighthouse</h1>
+                    <img src="Images/Lighthouse.png" class="img-responsive" />
+                </div>
+                <div id="divTulips">
+                    <h1>Tulips</h1>
+                    <img src="Images/Tulips.jpg" class="img-responsive" />
+                </div>
+                <div id="divJellyfish">
+                    <h1>Jellyfish</h1>
+                    <img src="Images/Jellyfish.png" class="img-responsive" />
+                </div>
+                <div id="divPenguins">
+                    <h1>Penguins</h1>
+                    <img src="Images/Penguins.png" class="img-responsive" />
+                </div>
             </div>
         </div>
     </div>
+
+    -->
+    <!--Bootstrap Image Carousel Tutorial Part 51--
+    <br /><br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div id="imageCarousel" class="carousel slide" data-wrap="true" data-interval="false" data-pause="false">
+                    <ol class="carousel-indicators">
+                        <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#imageCarousel" data-slide-to="1"></li>
+                        <li data-target="#imageCarousel" data-slide-to="2"></li>
+                        <li data-target="#imageCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="Images/Desert.png" class="img-responsive" />
+                            <div class="carousel-caption">
+                                <h3>Desert</h3>
+                                <p>
+                                    Beautiful Desert
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="Images/Jellyfish.png" class="img-responsive" />
+                            <div class="carousel-caption">
+                                <h3>Jellyfish</h3>
+                                <p>
+                                    Beautiful Jellyfish
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="Images/Lighthouse.png" class="img-responsive" />
+                            <div class="carousel-caption">
+                                <h3>Lighthouse</h3>
+                                <p>
+                                    Beautiful Lighthouse
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="Images/Penguins.png" class="img-responsive" />
+                            <div class="carousel-caption">
+                                <h3>Penguins</h3>
+                                <p>
+                                    Beautiful Penguins
+                                </p>
+                            </div>
+                        </div>
+                        <a href="#imageCarousel" class="carousel-control left" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a href="#imageCarousel" class="carousel-control right" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!--Bootstrap Multi Column Carousel - Part 52--
+    <br /><br />
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="imageCarousel" class="carousel slide" data-ride="carousel" data-pause="hover" data-wrap="true" data-interval="2000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#imageCarousel" data-slide-to="1"></li>
+                        <li data-target="#imageCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="Images/Desert.png" class="img-responsive" />
+                                    <div class="carousel-caption">
+                                        <h3>Desert</h3>
+                                        <p>
+                                            Beautiful Desert
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/Jellyfish.png" class="img-responsive" />
+                                    <div class="carousel-caption">
+                                        <h3>Jellyfish</h3>
+                                        <p>
+                                            Beautiful Jellyfish
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/Lighthouse.png" class="img-responsive" />
+                                    <div class="carousel-caption">
+                                        <h3>Lighthouse</h3>
+                                        <p>
+                                            Beautiful Lighthouse
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="Images/Penguins.png" class="img-responsive" />
+                                    <div class="carousel-caption">
+                                        <h3>Penguins</h3>
+                                        <p>
+                                            Beautiful Penguins
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/Hydrangeas.png" class="img-responsive" />
+                                    <div class="carousel-caption">
+                                        <h3>Hydrangeas</h3>
+                                        <p>
+                                            Beautiful Hydrangeas
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/Koala.png" class="img-responsive" />
+                                    <div class="carousel-caption">
+                                        <h3>Koala</h3>
+                                        <p>
+                                            Beautiful Koala
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <img src="Images/Tulips.jpg" class="img-responsive" />
+                                    <div class="carousel-caption">
+                                        <h3>Tulips</h3>
+                                        <p>
+                                            Beautiful Tulips
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/Chrysanthemum.png" class="img-responsive" />
+                                    <div class="carousel-caption">
+                                        <h3>Chrysanthemum</h3>
+                                        <p>
+                                            Beautiful Chrysanthemum
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <img src="Images/Stripes.png" class="img-responsive" />
+                                    <div class="carousel-caption">
+                                        <h3>Stripes</h3>
+                                        <p>
+                                            Beautiful Stripes
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <a href="#imageCarousel" class="carousel-control left" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a href="#imageCarousel" class="carousel-control right" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!---->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!--Bootstrap Image Carousel Tutorial Part 51 -- JavaScript--
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            $('#imageCarousel').carousel();
+        });
+    </script>-->
     <!--Bootstrap Scrollspy Not Working Tutorial Part 49--
     <script type="text/javascript">
         $(document).ready(function ()
